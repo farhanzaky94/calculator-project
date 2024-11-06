@@ -1,13 +1,16 @@
 body {
   background-color: rgb(249, 220, 182);
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: px;
-  padding: 25px;
+  gap: 5px;
+  padding: 20px;
 }
 
 #Calculator {
@@ -32,4 +35,6 @@ button {
   font-size: 2em;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 50px;
+  border: none;
 }
