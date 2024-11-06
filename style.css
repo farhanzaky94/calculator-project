@@ -4,6 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 #keys {
@@ -37,4 +38,20 @@ button {
   cursor: pointer;
   border-radius: 50px;
   border: none;
+}
+button:hover {
+  background-color: white;
+}
+button:active {
+  background-color: beige;
+}
+.operator-button {
+  background-color: orange;
+}
+.operator-button:hover {
+  background-color: rgb(255, 193, 79);
+}
+
+.operator-button:active {
+  background-color: rgb(245, 201, 120);
 }
