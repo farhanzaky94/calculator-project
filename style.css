@@ -16,7 +16,7 @@ body {
 
 #Calculator {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(247, 244, 144, 0.992);
+  background-color: rgba(0, 0, 0, 0.992);
   border-radius: 10px;
   max-width: 500px;
   overflow: hidden;
@@ -28,7 +28,7 @@ body {
   font-size: 4rem;
   text-align: left;
   border: none;
-  background-color: rgb(175, 163, 72);
+  background-color: rgb(137, 137, 137);
 }
 
 button {
