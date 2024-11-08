@@ -14,6 +14,12 @@ cons lastCharIsOperator = operators.includes(input);
 
 cons lastCharIsOperator = operators.includes(lastChar);
 
+if (isOperator && lastCharIsOperator) {
+  return;
+}
+
+
+
 
 function ClearDisplay() {
   display.value = "";
