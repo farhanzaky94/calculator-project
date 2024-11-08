@@ -1,8 +1,12 @@
 const display = document.getElementById(`display`);
 
 function appendToDisplay(input) {
-  display.value += input;
+  const.operators = ["+", "-", "*", "/"];
 }
+
+const lastChar = display.value.slice(-1);
+
+const isOperator = operators.includes(input);
 
 function ClearDisplay() {
   display.value = "";
