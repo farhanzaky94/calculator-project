@@ -1,25 +1,20 @@
-const display = document.getElementById(`display`);
+const display = document.getElementById("display");
 
 function appendToDisplay(input) {
-  const.operators = ["+", "-", "*", "/"];
+  const operators = ["+", "-", "*", "/"];
+
+  const lastChar = display.value.slice(-1);
+
+  const isOperator = operators.includes(input);
+
+  const lastCharIsOperator = operators.includes(lastChar);
+
+  if (isOperator && lastCharIsOperator) {
+    return;
+  }
+
+  display.value += input;
 }
-
-const lastChar = display.value.slice(-1);
-
-const isOperator = operators.includes(input);
-
-cons isOperator = operators.includes(input);
-
-cons lastCharIsOperator = operators.includes(input);
-
-cons lastCharIsOperator = operators.includes(lastChar);
-
-if (isOperator && lastCharIsOperator) {
-  return;
-}
-
-
-
 
 function ClearDisplay() {
   display.value = "";
