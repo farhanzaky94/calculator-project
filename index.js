@@ -17,6 +17,7 @@ function appendToDisplay(input) {
     display.value = input;
   } else {
     display.value += input;
+    display.scrollLeft = display.scrollWidth;
   }
 }
 
