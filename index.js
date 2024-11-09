@@ -13,16 +13,21 @@ function appendToDisplay(input) {
     return;
   }
 
-  display.value += input;
+  if (display.value === "0" && !isOperator) {
+    display.value = input;
+  } else {
+    display.value += input;
+  }
 }
 
 function ClearDisplay() {
-  display.value = "";
+  display.value = "0";
 }
 
 function calculate() {
   try {
-    display.value = eval(display.value);
+    const result = Function('"use strict"; return (' + display.value + ")")();
+    display.value = result;
   } catch (error) {
     display.value = "Error";
   }
