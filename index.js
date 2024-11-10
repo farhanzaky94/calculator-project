@@ -1,4 +1,5 @@
 const display = document.getElementById("display");
+const buttons = document.querySelectorAll("#keys button");
 
 function appendToDisplay(input) {
   const operators = ["+", "-", "*", "/"];
@@ -13,6 +14,14 @@ function appendToDisplay(input) {
     return;
   }
 
+  if (input === "-" && (display.value === "0" || lastCharIsOperator)) {
+    display.value += input;
+    return;
+  }
+  if (lastCharIsOperator) {
+    return;
+  }
+}
   if (display.value === "0" && !isOperator) {
     display.value = input;
   } else {
