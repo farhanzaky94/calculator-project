@@ -18,10 +18,7 @@ function appendToDisplay(input) {
     display.value += input;
     return;
   }
-  if (lastCharIsOperator) {
-    return;
-  }
-}
+
   if (display.value === "0" && !isOperator) {
     display.value = input;
   } else {
